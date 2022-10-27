@@ -1,23 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
 
-    <title>Document</title>
-  </head>
+  
   <section class="gallery">
-    <h2>Gallery</h2>
-    <div class="swiper mySwiper gallery-thumb">
-      <ul class="swiper-wrapper">
-        <li class="swiper-slide">
+    <h2 class="gallery__tittle">Gallery</h2>
+    <div class="gallery__thumb swiper mySwiper wrapper ">
+      <ul class="gallery__list swiper-wrapper">
+        <li class="gallery__item swiper-slide">
           <picture>
-            <source
+           <source
               srcset="
                 ./images/galleryfoto/ice-des.jpg         1x,
                 ./images/galleryfoto/ice-desk-retina.jpg 2x
@@ -31,6 +25,7 @@
                 ./images/galleryfoto/ice-tab-retina.jpg 2x
               "
               media="(min-width:768px)"
+
             />
             <source
               srcset="
@@ -39,16 +34,15 @@
               "
               media="(min-width:480px)"
             />
-
             <img
               class="gallery__img"
               src="./images/galleryfoto/ice-mob.jpg"
               alt="Photo of ice cream with fruit"
-              width=""
+             
             />
           </picture>
         </li>
-        <li class="swiper-slide">
+        <li class="gallery__item  swiper-slide">
           <picture>
             <source
               srcset="
@@ -57,16 +51,14 @@
               "
               media="(min-width:1200px)"
             />
-
-            <img
+             <img
               class="gallery__img"
               src="./images/galleryfoto/icetwo.jpg"
               alt="Photo of ice cream with sprinkles"
-              width=""
             />
           </picture>
         </li>
-        <li class="swiper-slide">
+        <li class="gallery__item swiper-slide">
           <picture>
             <source
               srcset="
@@ -75,12 +67,11 @@
               "
               media="(min-width:1200px)"
             />
-
-            <img
+          <img
               class="gallery__img"
               src="./images/galleryfoto/icethree.jpg"
               alt="Photo of ice cream with strawberries and vanilla flowers"
-              width=""
+              
             />
           </picture>
         </li>
@@ -94,3 +85,4 @@
     </script>
   </section>
 </html>
+
