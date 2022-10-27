@@ -1,24 +1,59 @@
 <section class="about">
-  <container class="container">
+  <div class="container">
     <p class="about__subtitle">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
-
     <div class="about__wrap">
-      <span class="about__img"></span>
-      <div class="about__descrition-wrap">
-        <p class="about__text">
-          Ice is a place where you will become not only a little happier, but
-          also healthier. Health is the main value for us, and we follow it when
-          creating our handmade desserts.
-        </p>
-        <p class="about__text">
-          We use traditional recipes and 100% natural ingredients. Our products
-          are so natural that they can be given to children from the age of
-          three years. Sweets lovers can expect 55 types of ice cream, 15 types
-          of coffee and 23 milkshakes.
-        </p>
-        <button class="about__button" type="button">Read more</button>
-      </div>
+      <picture class="about__img">
+        <source
+          srcset="
+            ./images/about/cow-eating-grass-desk.png        1x,
+            ./images/about/cow-eating-grass-desk-retina.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/about/cow-eating-grass-tab.png        1x,
+            ./images/about/cow-eating-grass-tab-retina.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/about/cow-eating-grass-mob.png        1x,
+            ./images/about/cow-eating-grass-mob-retina.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/about/cow-eating-grass-desk.png"
+          alt="Cow eating green grass"
+        />
+      </picture>
+
+      <ul class="about__descrition">
+        <li class="about__descrition-item">
+          <p class="about__text">
+            Ice is a place where you will become not only a little happier, but
+            also healthier. Health is the main value for us, and we follow it
+            when creating our handmade desserts.
+          </p>
+        </li>
+        <li class="about__descrition-item">
+          <p class="about__text">
+            Ice is a place where you will become not only a little happier, but
+            also healthier. Health is the main value for us, and we follow it
+            when creating our handmade desserts.
+          </p>
+        </li>
+        <li class="about__descrition-item">
+          <p class="about__text">
+            This is enough to choose ice cream and coffee for any mood!
+          </p>
+        </li>
+      </ul>
+
+      <button class="about__button" type="button">Read more</button>
     </div>
-  </container>
+  </div>
 </section>
