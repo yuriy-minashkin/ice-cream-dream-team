@@ -1,0 +1,22 @@
+.gallery-thumb {
+  height: 130px;
+  width: 279px;
+  border-radius: 7px;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 327px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1013px;
+    height: 422px;
+  }
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
