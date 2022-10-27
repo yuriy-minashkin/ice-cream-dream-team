@@ -1,0 +1,29 @@
+.products{
+    text-align: center;
+    background-image: url(../images/products/bc-products.jpg);
+    
+    &__container{
+        padding: 60px;
+    }
+    
+    &__slogan {
+        font-weight: 800;
+font-size: 18px;
+line-height: 22px;
+text-transform: uppercase;
+color: var(--accent-color);
+    }
+}
+
+.products__title {
+}
+.products__list {
+}
+.products__item {
+}
+.products__subtitle {
+}
+.products__text {
+}
+.products__btn {
+}
