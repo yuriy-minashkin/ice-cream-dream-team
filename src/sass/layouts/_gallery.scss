@@ -1,4 +1,6 @@
 .gallery-thumb {
+  margin: o auto;
+
   height: 130px;
   width: 279px;
   border-radius: 7px;
@@ -17,6 +19,8 @@
 
 .gallery__img {
   display: block;
+  
   width: 100%;
   height: 100%;
+
 }

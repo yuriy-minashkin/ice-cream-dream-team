@@ -1,69 +1,96 @@
-<section class="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery-thumb">
-    <picture>
-      <source
-        srcset="
-          ./images/galleryfoto/ice-des.jpg         1x,
-          ./images/galleryfoto/ice-desk-retina.jpg 2x
-        "
-        media="(min-width:1200px)"
-      />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
-      <source
-        srcset="
-          ./images/galleryfoto/ice-tab.jpg        1x,
-          ./images/galleryfoto/ice-tab-retina.jpg 2x
-        "
-        media="(min-width:768px)"
-      />
-      <source
-        srcset="
-          ./images/galleryfoto/ice-mob.jpg        1x,
-          ./images/galleryfoto/ice-mob-retina.jpg 2x
-        "
-        media="(min-width:480px)"
-      />
+    <title>Document</title>
+  </head>
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="swiper mySwiper gallery-thumb">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/galleryfoto/ice-des.jpg         1x,
+                ./images/galleryfoto/ice-desk-retina.jpg 2x
+              "
+              media="(min-width:1200px)"
+            />
 
-      <img
-        class="gallery__img"
-        src="./images/galleryfoto/ice-mob.jpg"
-        alt="Photo of ice cream with fruit"
-        width=""
-      />
-    </picture>
-    <picture>
-      <source
-        srcset="
-          ./images/galleryfoto/icetwo.jpg        1x,
-          ./images/galleryfoto/icetwo-retina.jpg 2x
-        "
-        media="(min-width:1200px)"
-      />
+            <source
+              srcset="
+                ./images/galleryfoto/ice-tab.jpg        1x,
+                ./images/galleryfoto/ice-tab-retina.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./images/galleryfoto/ice-mob.jpg        1x,
+                ./images/galleryfoto/ice-mob-retina.jpg 2x
+              "
+              media="(min-width:480px)"
+            />
 
-      <img
-        class="gallery__img"
-        src="./images/galleryfoto/icetwo.jpg"
-        alt="Photo of ice cream with sprinkles"
-        width=""
-      />
-    </picture>
+            <img
+              class="gallery__img"
+              src="./images/galleryfoto/ice-mob.jpg"
+              alt="Photo of ice cream with fruit"
+              width=""
+            />
+          </picture>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/galleryfoto/icetwo.jpg        1x,
+                ./images/galleryfoto/icetwo-retina.jpg 2x
+              "
+              media="(min-width:1200px)"
+            />
 
-    <picture>
-      <source
-        srcset="
-          ./images/galleryfoto/icethree.jpg        1x,
-          ./images/galleryfoto/icethree-retina.jpg 2x
-        "
-        media="(min-width:1200px)"
-      />
+            <img
+              class="gallery__img"
+              src="./images/galleryfoto/icetwo.jpg"
+              alt="Photo of ice cream with sprinkles"
+              width=""
+            />
+          </picture>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/galleryfoto/icethree.jpg        1x,
+                ./images/galleryfoto/icethree-retina.jpg 2x
+              "
+              media="(min-width:1200px)"
+            />
 
-      <img
-        class="gallery__img"
-        src="./images/galleryfoto/icethree.jpg"
-        alt="Photo of ice cream with strawberries and vanilla flowers"
-        width=""
-      />
-    </picture>
-  </div>
-</section>
+            <img
+              class="gallery__img"
+              src="./images/galleryfoto/icethree.jpg"
+              alt="Photo of ice cream with strawberries and vanilla flowers"
+              width=""
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        autoplay: true,
+      });
+    </script>
+  </section>
+</html>
