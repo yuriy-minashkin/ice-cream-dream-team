@@ -37,10 +37,13 @@
         autoplay: true,
       });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js%22%3E"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper('.mySwiper', {
-        autoplay: true,
+      var swiper = new Swiper('.mySw', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
       });
     </script>
   </body>

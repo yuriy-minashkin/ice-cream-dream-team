@@ -120,15 +120,19 @@
       @media screen and (min-width: 768px) {
           display: block;
         }
-      &::after {
-        content: '';
-        width: 12px;
-        height: 12px;
-        background-image: url('../images/svg-icons/tiny-arrow.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        fill: currentColor;
-      }
+      // &::after {
+      //   content: '';
+      //   width: 12px;
+      //   height: 12px;
+      //   background-image: url('../images/svg-icons/tiny-arrow.svg');
+      //   background-repeat: no-repeat;
+      //   background-position: center;
+      //   fill: currentColor;
+      // }
+    }
+
+    &__button-icon {
+      fill: currentColor;
     }
   
     &__button:hover {
