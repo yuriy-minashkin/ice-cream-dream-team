@@ -2,45 +2,57 @@
   <div class="modal header-modal">
     <p class="header-modal__title">Buy now</p>
     <ul class="header-modal__list">
-        <li class="header-modal__item">
-            <div class="header-modal__item-wrap">
-                <div class="header-modal__picture"></div>
-            </div>
-            <div class="header-modal__item-wrap">
-                <div class="header-modal__picture"></div>
-            </div>
-            <div class="header-modal__item-wrap">
-                <div class="header-modal__picture"></div>
-            </div>
-        </li>
-        <li class="header-modal__item">
-            <div class="header-modal__item-wrap">
-                <div class="header-modal__picture"></div>
-            </div>
-            <div class="header-modal__item-wrap">
-                <div class="header-modal__picture"></div>
-            </div>
-            <div class="header-modal__item-wrap">
-                <div class="header-modal__picture"></div>
-            </div>
-        </li>
-        <li class="header-modal__item">
-            <div class="header-modal__item-wrap">
-                <div class="header-modal__picture"></div>
-            </div>
-            <div class="header-modal__item-wrap">
-                <div class="header-modal__picture"></div>
-            </div>
-            <div class="header-modal__item-wrap">
-                <div class="header-modal__picture"></div>
-            </div>
-        </li>
+      <li class="header-modal__item header-modal__item--ice-cream">
+        <div class="header-modal__icon header-modal__icon--ice-cream"></div>
+        <div class="header-modal__box">
+          <p class="header-modal__subtitle">ice cream</p>
+        </div>
+      </li>
+      <li class="header-modal__item header-modal__item--ice-coffee">
+        <div class="header-modal__icon header-modal__icon--ice-coffee"></div>
+        <div class="header-modal__box">
+          <p class="header-modal__subtitle">ice coffee</p>
+        </div>
+      </li>
+      <li class="header-modal__item header-modal__item--milkshakes">
+        <div class="header-modal__icon header-modal__icon--milkshakes"></div>
+        <div class="header-modal__box">
+          <p class="header-modal__subtitle">milkshake</p>
+        </div>
+      </li>
     </ul>
 
-    <button class="modal__close-button button" type="button" data-modal-close>
-      <svg>
-        <use></use>
-      </svg>
-    </button>
+    <form class="feedback">
+      <label class="feedback__item">
+        <input
+          type="text"
+          name="feedback-username"
+          class="feedback__input"
+          placeholder="Name"
+        />
+      </label>
+      <label class="feedback__item">
+        <input
+          class="feedback__input"
+          type="tel"
+          name="feedback-tel"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="feedback__item">
+        <textarea
+          class="feedback__textarea"
+          name="comments"
+          rows="10"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+    </form>
+    <button class="header-modal__submit submit" type="submit">Submit</button>
   </div>
+  <button class="modal__close-button button" type="button" data-modal-close>
+    <svg>
+      <use></use>
+    </svg>
+  </button>
 </div>
