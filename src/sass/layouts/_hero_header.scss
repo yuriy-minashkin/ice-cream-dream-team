@@ -1,0 +1,127 @@
+.header {
+    background-color: rgb(18, 21, 231);
+    width: 100%;
+    padding-top: 12px;
+    margin-bottom: 60px;    
+}
+
+.header__container {  
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.nav {
+    display: none;
+}
+
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;    
+}
+
+.menu-btn {    
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+    @media screen and(min-width: 1200px) {
+        display: none;;
+    }
+}
+
+.menu-icon {
+    fill: #fff;
+}
+
+.buy-now-btn {
+    display: none;
+}
+
+// --------------HERO---------
+
+.hero__container {
+    height: 392px;
+    background-color: brown;
+    position: relative;
+}
+.hero__title {
+    width: 247px;
+    height: 97px;
+    margin-bottom: 32px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;    
+}
+
+.hero__buttons {
+    display: flex;  
+    gap: 8px;     
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 0 auto;    
+}
+
+.hero__btn-prod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 12px 34px;
+    // width: 62px;
+    height: 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    color: black;
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+    
+}
+
+.hero__btn-how {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // width: 82px;
+    height: 24px;
+    padding: 12px 34px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--accent-color);
+}
+
+.hero__ice-cream {    
+    position: absolute;    
+    bottom: 0;
+    right: 82px;  
+    z-index: 2;     
+}
+
+.hero__dots {
+    position: absolute;
+    bottom: 0;
+    right: 0px; 
+    z-index: 1;   
+}
+

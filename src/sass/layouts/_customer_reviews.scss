@@ -1,0 +1,117 @@
+.section-reviews {
+  width: 100%;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  background-image: url(../images/reviewsfoto/backgroundreviews.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and(min-resolution:192dpi),
+    screen and(min-resolution:2dppx) {
+    background-image: url(../images/reviewsfoto/backgroundreviews-retina.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    // height: 958px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  //   @media screen and (min-width: 1200px) {
+  //     height: 1020px;
+  //   }
+}
+// .section-reviews__img {
+
+// }
+// .section-reviews__article {
+
+// }
+// .swiper {
+// }
+// .mySw {
+// }
+// .wrapper {
+// }
+.section-reviews__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+// .list {
+// }
+// .swiper-wrapper {
+// }
+// .section-reviews__item {
+
+// }
+// .swiper-slide {
+// }
+.section-reviews__wrap {
+  width: 100%;
+  padding: 0 20px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 320px) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 705px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+  }
+}
+.section-reviews__text {
+  margin-bottom: 30px;
+  display: block;
+  padding: 34px 39px;
+  margin: 0 0 32px;
+  background: #84a178;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.58;
+
+  text-align: center;
+
+  color: #fcfcfc;
+}
+.section-reviews__name {
+  display: block;
+  margin: 0 0 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+
+  text-align: center;
+
+  color: #131313;
+}
+.section-reviews__img {
+  margin-top: 80px;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 128px;
+  }
+}
+.swiper-pagination {
+  margin-bottom: 48px;
+  margin-right: 18px;
+
+  .swiper-pagination-bullet-active {
+    background-color: #84a178;
+  }
+  // @media screen and (min-width: 768px) {
+  //     margin-bottom: 80px;
+  //   }
+  //   @media screen and (min-width: 1200px) {
+  //     margin-bottom: 100px;
+  //   }
+}
