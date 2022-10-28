@@ -59,6 +59,29 @@
     color: var(--secondary-font-color);
     margin-bottom: 24px;
   }
+
+  &__submit {
+  height: 32px;
+  padding: 12px 32px;
+  margin: 0;
+  align-self: center;
+  background: var(--accent-color);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+      &:hover {
+      background-color: var(--hover-color);
+    }
+    &:focus {
+      background-color: var(--hover-color);
+      color: var(--primary-font-color);
+    }
+}
 }
 
 .feedback {
@@ -85,6 +108,7 @@
     border-radius: 10px;
     height: 32px;
     padding: 8px 12px;
+    outline: 0;
     &::placeholder {
       color: var(--second-font-color);
     }
@@ -103,22 +127,10 @@
     border: 1px solid #84a178;
     border-radius: 10px;
     padding: 8px 12px;
+    outline: 0;
     &::placeholder {
       color: var(--second-font-color);
     }
   }
 }
-.franchise__submit {
-  height: 32px;
-  padding: 12px 32px;
-  margin: 0;
-  align-self: center;
-  background: var(--accent-color);
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
+
