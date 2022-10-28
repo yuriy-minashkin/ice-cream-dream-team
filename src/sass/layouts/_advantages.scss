@@ -1,6 +1,10 @@
 .advantages {
-  margin-top: 42px;
-  margin-bottom: 60px;
+  padding-top: 42px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 48px;
+    padding-bottom: 40px;
+    }
 
   &__list {
     display: flex;
@@ -8,6 +12,16 @@
     justify-content: center;
     text-align: center;
     gap: 25px;
+    @media screen and (min-width: 768px) {
+      gap: 80px;
+      }
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      max-width: 152px;
+    }
+    
   }
 
   &__span {
@@ -18,21 +32,12 @@
     height: 50px;
     border-radius: 50%;
     margin: 0 auto 16px;
-
     background-color: var(--accent-color);
+    @media screen and (min-width: 768px) {
+      margin: 0 auto 32px;
+    }
 
   }
-
-  // &__icon::before {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 110px;
-  //   height: 110px;
-  //   background-color: var(--accent-color);
-  // }
 
   &__meta {
     text-align: center;
@@ -45,13 +50,24 @@
     line-height: calc(42 / 36);
     text-transform: uppercase;
     margin-bottom: 18px;
+    @media screen and (min-width: 768px) {
+      font-family: 'Montserrat';
+      font-size: 48px;
+      line-height: calc(59 / 48);
+      margin-bottom: 16px;
+      }
   }
 
   &__text {
     font-weight: 700;
     font-size: 12px;
     line-height: 170%;
-    margin: 0 25px;
-
+    padding: 0 25px;
+    @media screen and (min-width: 768px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 174%;
+      padding: 0;
+      }
   }
 }
