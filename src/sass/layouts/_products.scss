@@ -17,7 +17,14 @@
   }
 
   &__container.container  {
-    padding: 60px 0;
+    padding: 60px 20px;
+    @media screen and (min-width: 768px){
+      padding: 60px 32px 82px;
+    }
+    @media screen and (min-width: 1200px){
+      padding: 60px 15px 66px;
+    }
+    
   }
 
   &__slogan {
@@ -75,9 +82,12 @@
     }
   }
 }
+.products__list {
 @media screen and (min-width: 768px) {
-  .products__list {
     display: flex;
+    gap: 16px;
+  }
+  @media screen and (min-width: 1200px){
     gap: 30px;
   }
 }
