@@ -14,6 +14,10 @@
       font-size: 22px;
       line-height: calc(27 / 22);
     }
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: calc(37 / 30);
+    }
   }
 
   &__title {
@@ -28,7 +32,13 @@
       line-height: calc(43 / 34);
       letter-spacing: 0.06em;
       margin-bottom: 79px;
+      padding: 0;
       }
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: calc(45 / 36);
+      margin-bottom: 82px;
+    }
   }
 
   &__wrap {
@@ -36,11 +46,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 62px;
     @media screen and (min-width: 768px) {
       justify-content: space-between;
       gap: 32px;
       }
+    @media screen and (min-width: 1200px) {
+      justify-content: start;
+      gap: 0;
+    }
 
   }
 
@@ -55,6 +69,12 @@
       height: 330px;
       top: -10px;
       }
+      @media screen and (min-width: 1200px) {
+        width: 500px;
+        height: 500px;
+        margin-right: 100px;
+        top: 0;
+      }
     &::before {
     content: '';
       position: absolute;
@@ -63,29 +83,54 @@
       top: 21px;
       left: 0;
       background-image: url('../images/about/cow-eating-grass-mob.png');
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url('../images/about/cow-eating-grass-mob-retina.png');
+        }
       @media screen and (min-width: 768px) {
         background-image: url('../images/about/cow-eating-grass-tab.png');
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: url('../images/about/cow-eating-grass-tab-retina.png');
+          }
         }
+        @media screen and (min-width: 1200px) {
+        background-image: url('../images/about/cow-eating-grass-desk.png');
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: url('../images/about/cow-eating-grass-desk-retina.png');
+          }
+        width: 490px;
+        height: 490px;
+        top: 39px;
+      }
     }
   }
 
-  &__descrition-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  // &__descrition-wrap {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   @media screen and (min-width: 768px) {
+  //     display: block;
+  //     }
+  // }
 
   &__descrition {
-    padding-left:  30px;
-    padding-right: 30px;
+    max-width: 220px;;
     margin-bottom: 20px;
     @media screen and (min-width: 768px) {
       max-width: 334px;
-      padding-left: 0;
-      padding-right: 0;
       margin-bottom: 48px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 463px;
     }
   }
 
@@ -107,9 +152,15 @@
   }
 
   &__text {
+    font-weight: 400;
     font-size: 12px;
+    line-height: 162%;
     @media screen and (min-width: 768px) {
       text-align: left;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 176%;
     }
   }
 
@@ -121,10 +172,12 @@
       line-height: calc(18 / 14);
       border-radius: 10px;
       padding: 12px 34px;
+      margin: 0 auto;
       color: var(--secondary-font-color);
       background-color: var(--accent-color);
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       @media screen and (min-width: 768px) {
+        margin: 0;
           
         }
       // &::after {
