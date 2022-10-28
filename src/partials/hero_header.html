@@ -4,42 +4,41 @@
       <picture>
         <source
           srcset="
-            /src/images/header-hero/desktop/logo-desk-x1.png 1x,
-            /src/images/header-hero/desktop/logo-desk-x2.png 2x
+            ./images/header-hero/desktop/logo-desk-x1.png 1x,
+            ./images/header-hero/desktop/logo-desk-x2.png 2x
           "
           media="(min-width: 1200px)"
           type="image/png"
         />
         <source
           srcset="
-            /src/images/header-hero/tab/logo-tab-x1.png 1x,
-            /src/images/header-hero/tab/logo-tab-x2.png 2x
+            ./images/header-hero/tab/logo-tab-x1.png 1x,
+            ./images/header-hero/tab/logo-tab-x2.png 2x
           "
           media="(min-width: 768px)"
           type="image/png"
         />
         <source
           srcset="
-            /src/images/header-hero/mobile/logo-mob-x1.png 1x,
-            /src/images/header-hero/mobile/logo-mob-x2.png 2x
+            ./images/header-hero/mobile/logo-mob-x1.png 1x,
+            ./images/header-hero/mobile/logo-mob-x2.png 2x
           "
           media="(max-width: 768px)"
           type="image/png"
         />
 
-        <img
-          src="/src/images/header-hero/desktop/logo-desk-x1.png"
-          alt="logo"
-        />
+        <img src="./images/header-hero/tab/logo-tab-x1.png" alt="logo" />
       </picture>
     </a>
 
     <nav class="nav">
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="">Home</a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="">How it's made?</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="">Our products</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
       </ul>
     </nav>
 
@@ -52,52 +51,86 @@
           ></use>
         </svg>
       </button>
-      <button class="buy-now-btn" type="button"></button>
+      <button class="buy-now-btn" type="button">
+        Buy now
+        <svg class="buy-arrow" width="12" height="12">
+          <use href="./images/header-hero/svg/icons.svg#arrow-buy"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
 
 <section class="hero">
   <div class="hero__container container">
-    <h1 class="hero__title">ice cream made with passion</h1>
+    <div class="hero__top-wrapper">
+      <div class="hero__title-wrapper">
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__title--accent">passion</span>
+        </h1>
 
-    <ul class="hero__buttons">
-      <li>
-        <a class="hero__btn-prod" href="#products">Products</a>
-      </li>
-      <li>
-        <a class="hero__btn-how" href="#about">How it's made?</a>
-      </li>
-    </ul>
+        <ul class="hero__buttons">
+          <li class="hero__buttons-item">
+            <a class="hero__btn-prod" href="#products">Products</a>
+          </li>
+          <li class="">
+            <a class="hero__btn-how" href="#about">How it's made?</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="stores">
+        <li class="stores__item">
+          <p class="stores__number">16</p>
+          <p class="stores__text">cafes</p>
+        </li>
+        <li class="stores__item">
+          <p class="stores__number">23</p>
+          <p class="stores__text">food trucks</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero__bottom-discription">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <button type="button" class="btn-svg-info">
+        <svg class="arrow-svg" width="12" height="14">
+          <use></use>
+        </svg>
+      </button>
+    </div>
 
     <picture class="hero__ice-cream">
       <source
         srcset="
-          /src/images/header-hero/desktop/ice-cream-desk-1x.png 1x,
-          /src/images/header-hero/desktop/ice-cream-desk-2x.png 2x
+          ./images/header-hero/desktop/ice-cream-desk-1x.png 1x,
+          ./images/header-hero/desktop/ice-cream-desk-2x.png 2x
         "
         media="(min-width: 1200px)"
         type="image/png"
       />
       <source
         srcset="
-          /src/images/header-hero/tab/ice-cream-tab-1x.png 1x,
-          /src/images/header-hero/tab/ice-cream-tab-2x.png 2x
+          ./images/header-hero/tab/ice-cream-tab-1x.png 1x,
+          ./images/header-hero/tab/ice-cream-tab-2x.png 2x
         "
         media="(min-width: 768px)"
         type="image/png"
       />
       <source
         srcset="
-          /src/images/header-hero/mobile/ice-cream-mob-1x.png 1x,
-          /src/images/header-hero/mobile/ice-cream-mob-2x.png 2x
+          ./images/header-hero/mobile/ice-cream-mob-1x.png 1x,
+          ./images/header-hero/mobile/ice-cream-mob-2x.png 2x
         "
         media="(max-width: 768px)"
         type="image/png"
       />
 
       <img
-        src="/src/images/header-hero/desktop/ice-cream-desk-1x.png"
+        src="./images/header-hero/desktop/ice-cream-desk-1x.png"
         alt="ice cream"
       />
     </picture>
@@ -105,30 +138,53 @@
     <picture class="hero__dots">
       <source
         srcset="
-          /src/images/header-hero/desktop/dots-desk-x1.png 1x,
-          /src/images/header-hero/desktop/dots-desk-x2.png 2x
+          ./images/header-hero/desktop/dots-desk-x1.png 1x,
+          ./images/header-hero/desktop/dots-desk-x2.png 2x
         "
         media="(min-width: 1200px)"
         type="image/png"
       />
       <source
         srcset="
-          /src/images/header-hero/tab/dots-tab-x1.png 1x,
-          /src/images/header-hero/tab/dots-tab-x2.png 2x
+          ./images/header-hero/tab/dots-tab-x1.png 1x,
+          ./images/header-hero/tab/dots-tab-x2.png 2x
         "
         media="(min-width: 768px)"
         type="image/png"
       />
       <source
         srcset="
-          /src/images/header-hero/mobile/dots-mob-x1.png 1x,
-          /src/images/header-hero/mobile/dots-mob-x2.png 2x
+          ./images/header-hero/mobile/dots-mob-x1.png 1x,
+          ./images/header-hero/mobile/dots-mob-x2.png 2x
         "
         media="(max-width: 768px)"
         type="image/png"
       />
 
-      <img src="/src/images/header-hero/desktop/dots-desk-x1.png" alt="dots" />
+      <img src="./images/header-hero/desktop/dots-desk-x1.png" alt="dots" />
+    </picture>
+
+    <picture class="hero__creamy">
+      <source
+        srcset="
+          ./images/header-hero/desktop/creamy-desk-1x.png 1x,
+          ./images/header-hero/desktop/creamy-desk-2x.png 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/header-hero/tab/creamy-tab-1x.png 1x,
+          ./images/header-hero/tab/creamy-tab-2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <img
+        src="./images/header-hero/desktop/creamy-desk-1x.png"
+        alt="a lot of ice cream"
+      />
     </picture>
   </div>
 </section>
