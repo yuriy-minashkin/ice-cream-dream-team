@@ -27,7 +27,7 @@
       font-size: 34px;
       line-height: calc(43 / 34);
       letter-spacing: 0.06em;
-      margin-bottom: 72px;
+      margin-bottom: 79px;
       }
   }
 
@@ -35,9 +35,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 40px;
     @media screen and (min-width: 768px) {
-        gap: 32px;
+      justify-content: space-between;
+      gap: 32px;
       }
 
   }
@@ -48,6 +50,11 @@
       height: 278px;
       border-radius: 50%;
     background-color: rgba(248, 210, 78, 0.7);
+    @media screen and (min-width: 768px) {
+      width: 334px;
+      height: 330px;
+      top: -10px;
+      }
     &::before {
     content: '';
       position: absolute;
@@ -58,6 +65,9 @@
       background-image: url('../images/about/cow-eating-grass-mob.png');
       background-repeat: no-repeat;
       background-position: center;
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/about/cow-eating-grass-tab.png');
+        }
     }
   }
 
@@ -66,22 +76,35 @@
     padding-right: 30px;
     margin-bottom: 20px;
     @media screen and (min-width: 768px) {
-        padding-left: 0;
-        padding-right: 0;
-        margin-bottom: 48px;
-      }
+      max-width: 334px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 48px;
+    }
   }
 
   &__descrition-item:first-child {
     margin-bottom: 4px;
   }
 
+  &__descrition-item:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 8px;
+    }
+  }
+
   &__descrition-item:last-child {
     display: none;
+    @media screen and (min-width: 768px) {
+      display: contents;
+    }
   }
 
   &__text {
     font-size: 12px;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   
@@ -94,6 +117,9 @@
       color: var(--secondary-font-color);
       background-color: var(--accent-color);
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @media screen and (min-width: 768px) {
+          display: block;
+        }
       &::after {
         content: '';
         width: 12px;
