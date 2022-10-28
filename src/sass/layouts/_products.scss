@@ -2,9 +2,19 @@
   text-align: center;
   color: var(--secondary-font-color);
   background-image: url(../images/products/bc-products.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: 45% 0%;
+  background-size: 1200px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and(min-resolution:192dpi),
+    screen and(min-resolution:2dppx) {
+    background-image: url(../images/products/bc-products-retina.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   &__container {
     padding: 60px 0;
@@ -144,6 +154,7 @@
     @media screen and (min-width: 1200px) {
       background-image: url('../images/products/products-icecream-desk.png');
       background-size: 300px 300px;
+      top: -15;
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -180,6 +191,7 @@
     @media screen and (min-width: 1200px) {
       background-image: url('../images/products/products-coffee-desk.png');
       background-size: 300px 300px;
+      top: -15;
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -216,6 +228,7 @@
     @media screen and (min-width: 1200px) {
       background-image: url('../images/products/products-milkshakes-desk.png');
       background-size: 300px 300px;
+      top: -15;
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
