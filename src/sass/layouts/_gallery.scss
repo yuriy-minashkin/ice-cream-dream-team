@@ -2,9 +2,12 @@
   margin: o auto;
 
   height: 130px;
-  width: 279px;
+  width: 100%;
   border-radius: 7px;
   overflow: hidden;
+  @media screen and(min-width: 320px){
+    width: 279px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 704px;

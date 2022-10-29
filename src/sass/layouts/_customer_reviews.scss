@@ -1,8 +1,6 @@
 .section-reviews {
   width: 100%;
 
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
   background-image: url(../images/reviewsfoto/backgroundreviews.jpg);
   background-repeat: no-repeat;
@@ -23,37 +21,19 @@
   //     height: 1020px;
   //   }
 }
-// .section-reviews__img {
 
-// }
-// .section-reviews__article {
-
-// }
-// .swiper {
-// }
-// .mySw {
-// }
-// .wrapper {
-// }
 .section-reviews__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-// .list {
-// }
-// .swiper-wrapper {
-// }
-// .section-reviews__item {
 
-// }
-// .swiper-slide {
-// }
 .section-reviews__wrap {
   width: 100%;
-  padding: 0 20px 50px;
+  // padding: 0 20px 50px;
   margin-left: auto;
   margin-right: auto;
+
   @media screen and (min-width: 320px) {
     width: 280px;
   }
@@ -61,6 +41,7 @@
   @media screen and (min-width: 768px) {
     width: 705px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 968px;
   }
@@ -70,7 +51,7 @@
   display: block;
   padding: 34px 39px;
   margin: 0 0 32px;
-  background: #84a178;
+  background: var(--primary-background-color);
   border-radius: 10px;
   font-weight: 400;
   font-size: 12px;
@@ -106,7 +87,7 @@
   margin-right: 18px;
 
   .swiper-pagination-bullet-active {
-    background-color: #84a178;
+    background-color: var(--primary-background-color);
   }
   // @media screen and (min-width: 768px) {
   //     margin-bottom: 80px;
