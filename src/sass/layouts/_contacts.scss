@@ -122,7 +122,7 @@
   color: var(--working-hours-font);
 }
 
-.contacts__button {
+.contacts__btn-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,64 +132,58 @@
   @media screen and(min-width: 768px) {
     flex-direction: row;
   }
-  &-name {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-  }
 }
-.contacts__button-one {
-  display: block;
+
+.contacts__btn {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  width: 196px;
+  min-width: 196px;
+  font-weight: 600;
+  line-height: calc(18 / 14);
   border-radius: 10px;
-  padding: 12px 34px;
-  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
   color: var(--secondary-font-color);
+  border: 2px solid #F8D24E;
   background-color: var(--accent-color);
-  border: 2px solid transparent;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &::after {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background-image: url('../images/svg-icons/tiny-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    fill: currentColor;
-  }
-
-  &:hover {
-    background-color: var(--hover-color);
-  }
-
-  &:focus {
-    color: var(--primary-font-color);
-    background-color: var(--hover-color);
-    outline: transparent;
+  @media screen and (min-width: 768px) {
+    margin: 0;
   }
 }
-.contacts__button-two {
-  display: block;
-  align-items: center;
-  width: 196px;
-  border-radius: 10px;
-  padding: 12px 34px;
-  text-align: center;
-  color: var(--secondary-font-color);
-  background-color: transparent;
-  border: 2px solid var(--accent-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    border: 2px solid var(--hover-color);
-  }
-  &:focus {
-    color: var(--primary-font-color);
-    border: 2px solid var(--hover-color);
-    outline: transparent;
-  }
+.contacts__btn--transparent {
+  background-color: transparent;
+}
+
+.contacts__btn-icon {
+  margin-left: 6px;
+  fill: currentColor;
+}
+
+.contacts__btn-icon--transparent {
+  margin-left: 9px;
+}
+
+.contacts__btn:hover {
+  background-color: var(--hover-color);
+}
+
+.contacts__btn--transparent:hover {
+  background-color: transparent;
+  border: 2px solid #0A8817;
+}
+
+.contacts__btn:focus {
+  color: var(--primary-font-color);
+  background-color: var(--hover-color);
+  outline: transparent;
+}
+
+.contacts__btn--transparent:focus {
+  border: 2px solid #0A8817;
+  background-color: transparent;
+  outline: transparent;
 }
