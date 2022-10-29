@@ -169,6 +169,7 @@
 
 .contacts__btn:hover {
   background-color: var(--hover-color);
+  border: 2px solid #0A8817;
 }
 
 .contacts__btn--transparent:hover {
@@ -179,6 +180,7 @@
 .contacts__btn:focus {
   color: var(--primary-font-color);
   background-color: var(--hover-color);
+  border: 2px solid #0A8817;
   outline: transparent;
 }
 
