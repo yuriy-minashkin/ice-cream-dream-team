@@ -1,6 +1,5 @@
 .contacts {
   background-color: var(--primary-background-color);
-
   align-items: center;
 }
 .contacts__tittle {
@@ -21,15 +20,28 @@
   font-size: 12px;
   line-height: 1.86;
   width: 100%;
+ @media screen and(min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20p;
+  }
+
   @media screen and(min-width: 768px) {
     font-size: 14px;
     display: flex;
+    flex-direction: row;
+    margin: 0;
     gap: 16px;
-    @media screen and(min-width: 1200px) {
-      font-size: 16px;
-      gap: 32px;
-    }
   }
+  @media screen and(min-width: 1200px) {
+    font-size: 16px;
+    gap: 32px;
+    margin: 0;
+  }
+}
+.contacts__item-first {
+  margin-top: -375px;
 }
 .contacts__item {
   color: var(--secondary-font-color);
@@ -39,6 +51,7 @@
   margin-right: auto;
 
   width: 100%;
+
   // height: 410px;
   @media screen and(min-width: 320px) {
     width: 280px;
@@ -47,11 +60,13 @@
     width: 224px;
     padding: 40px 24px;
     margin-bottom: 60px;
+    margin-top: -310px;
   }
   @media screen and(min-width: 1200px) {
     margin-bottom: 64px;
     width: 368px;
     padding: 40px 40px;
+    margin-top: -100px;
   }
 
   background: #ffffff;
@@ -62,7 +77,7 @@
 .contacts__item-categories {
   padding: 0 32px;
   display: inline-block;
-  
+
   font-style: normal;
   font-size: 12px;
   font-weight: 500;
@@ -71,8 +86,11 @@
   background: var(--accent-color);
   border-radius: 4px;
   padding: 0 20px;
+  margin-bottom: 20px;
   @media screen and(min-width: 768px) {
     font-size: 16px;
+    margin-bottom: 32px;
+    padding: 0 10px;
   }
 }
 
@@ -91,7 +109,6 @@
   border-bottom: 1px solid #e1e1e1;
 }
 .wrap-adress {
-  padding-top: 20px;
   padding-bottom: 24px;
 }
 .contacts__item-adress {
@@ -129,8 +146,13 @@
   gap: 16px;
   justify-content: center;
   line-height: normal;
+  padding-bottom: 38px;
   @media screen and(min-width: 768px) {
     flex-direction: row;
+    padding-bottom: 40px;
+  }
+  @media screen and(min-width: 1200px) {
+    padding-bottom: 64px;
   }
 }
 
