@@ -1,3 +1,15 @@
+.wrap-two-section {
+  background-image: url(../images/reviewsfoto/backgroundreviews.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and(min-resolution:192dpi),
+    screen and(min-resolution:2dppx) {
+    background-image: url(../images/reviewsfoto/backgroundreviews-retina.jpg);
+  }
+}
 .gallery__thumb {
   margin: o auto;
 
@@ -5,7 +17,8 @@
   width: 100%;
   border-radius: 7px;
   overflow: hidden;
-  @media screen and(min-width: 320px){
+
+  @media screen and(min-width: 320px) {
     width: 279px;
   }
 
@@ -23,21 +36,19 @@
 }
 
 .gallery__img {
-  
   display: block;
   margin: 0;
   padding: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
-
 }
-.gallery__list{
+.gallery__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.gallery__tittle{
+.gallery__tittle {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -48,5 +59,4 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-
 }
