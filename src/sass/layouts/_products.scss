@@ -297,6 +297,7 @@
     .products__btn:focus & {
       width: 50px;
       height: 3px;
+      outline: transparent;
       &::before,
       &::after {
         height: 3px;
