@@ -13,13 +13,14 @@
   z-index: 3;
   overflow: hidden;
   overflow-y: auto;
-}
+  transition: visibility var(--transition-style),
+    opacity var(--transition-style);
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  display: none;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
 }
 
 .modal {
@@ -54,14 +55,12 @@
       right: 20px;
     }
     &:hover .modal__close-icon {
-        fill: var(--hover-color);
-      }
-
+      fill: var(--hover-color);
+    }
   }
   &__close-icon {
-      fill: var(--second-font-color);
-
-    }
+    fill: var(--second-font-color);
+  }
   &__button {
     height: 32px;
     padding: 12px 32px;
