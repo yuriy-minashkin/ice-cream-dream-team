@@ -258,6 +258,10 @@
   margin: 0 auto;
   border-radius: 3px;
 
+  &:focus-visible {
+      outline: transparent;
+    }
+
   &--line {
     display: block;
     width: 40px;
@@ -297,13 +301,15 @@
     .products__btn:focus & {
       width: 50px;
       height: 3px;
-      outline: transparent;
+      
       &::before,
       &::after {
         height: 3px;
         left: 43px;
       }
     }
+
+    
     transition-property: width, height;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
