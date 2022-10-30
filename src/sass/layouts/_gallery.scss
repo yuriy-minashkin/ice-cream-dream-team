@@ -1,4 +1,6 @@
 .wrap-two-section {
+  display: flex;
+  flex-direction: column;
   background-image: url(../images/reviewsfoto/backgroundreviews.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -10,17 +12,25 @@
     background-image: url(../images/reviewsfoto/backgroundreviews-retina.jpg);
   }
 }
+
+.gallery {
+  margin-top: -24px;
+
+  @media screen and(min-width: 768px) {
+    margin-top: -164px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-top: -94px;
+  }
+}
+
 .gallery__thumb {
-  margin: o auto;
+  margin: 0 auto;
 
   height: 130px;
-  width: 100%;
+  width: 279px;
   border-radius: 7px;
   overflow: hidden;
-
-  @media screen and(min-width: 320px) {
-    width: 279px;
-  }
 
   @media screen and (min-width: 768px) {
     width: 704px;
