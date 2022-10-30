@@ -454,7 +454,6 @@
         .products__button:focus & {
             width: 50px;
             height: 3px;
-            outline: transparent;
 
             &::before,
             &::after {
