@@ -175,8 +175,8 @@
       margin: 0 auto;
       color: var(--secondary-font-color);
       background-color: var(--accent-color);
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: background-color var(--transition-style),
+        color var(--transition-style);
       @media screen and (min-width: 768px) {
         margin: 0;
           
