@@ -1,35 +1,36 @@
 
 
 .footer__inner {
+	margin-bottom: 40px;
     @media screen and (min-width: 768px) {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		margin-bottom: 32px;
 	}
 	@media screen and (min-width: 1200px) {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		margin-bottom: 54px;
 	}
 }
 
 .footer__texts {
-	margin-left: 20px;
 	margin-bottom: 42px;
 	width: 230px;
 
 	@media screen and (min-width: 768px) {
 		width: 352px;
+		margin-bottom: 0;
 	}
 
 	@media screen and (min-width: 1200px) {
-		width: 497px;
+		width: 100%;
 	}
 }
 
 .footer__text {
-	font-family: 'Montserrat';
-	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 1.22;
@@ -42,6 +43,7 @@
 		line-height: 1.23;
 		letter-spacing: 0.04em;
 		margin-bottom: 9px;
+		width: 400px;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -50,6 +52,7 @@
 		line-height: 1.23;
 		letter-spacing: 0.04em;
 		margin-bottom: 14px;
+		width: auto;
 	}
 }
 
@@ -111,7 +114,7 @@
     width: 38;
     height: 38;
 }
-.footer__contact-text {
+.footer__tel--text {
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 186%;
@@ -126,13 +129,16 @@
 	}
 }
 
-.footer__contact--number {
+
+.footer__contacts {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.footer__tel {
 	display: flex;
 	justify-content: flex-end;
-	margin-bottom: 40px;
-}
-
-.footer__tel {
+	width: 338px;
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 186%;
@@ -144,16 +150,13 @@
 
 	@media screen and (min-width: 1200px) {
 		font-size: 16px;
+		letter-spacing: 0.02em;
 	}
 }
 .footer__end {
 	border-top: 1px solid var(--footer-end-text-border-color);
 	display: flex;
 	justify-content: center;
-	@media screen and (min-width: 1200px) {
-		margin-left: 1%;
-		margin-right: 1%;
-	}
 }
 .footer__end--text {
 	font-weight: 700;
@@ -162,6 +165,8 @@
 	color: var(--footer-end-text-color);
 	padding-top: 16px;
 	padding-bottom: 62px;
+	padding-left: 60px;
+	padding-right: 60px;
 	text-align: center;
 	width: 280px;
 
@@ -169,6 +174,9 @@
 		line-height: 186%;
 		width: 100%;
         padding-top: 14px;
+		padding-bottom: 13px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -176,5 +184,8 @@
 		line-height: 186%;
 		width: 100%;
         padding-top: 12px;
+		padding-bottom: 11px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
