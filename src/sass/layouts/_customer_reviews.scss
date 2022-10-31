@@ -101,7 +101,8 @@
 .swiper-pagination-bullet {
   width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px));
   height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,12px));
-  // background-color: #D9D9D9;
+  background: #D9D9D9;
+  opacity: unset;
 }
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap,9px);
