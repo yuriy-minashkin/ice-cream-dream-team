@@ -32,12 +32,11 @@
   width: 100%;
   border: 2px solid var(--accent-color);
   border-radius: 10px;
-  padding: 30px;
+  padding: 28px;
   max-width: 280px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     max-width: 568px;
-    padding: 32px 60px;
   }
 
   &__close-button {
@@ -49,8 +48,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: fill var(--transition-style);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       top: 20px;
       right: 20px;
     }
@@ -74,6 +74,8 @@
     display: flex;
     align-items: center;
     text-align: center;
+    transition: background-color var(--transition-style),
+      color var(--transition-style);
 
     &:hover {
       background-color: var(--hover-color);
@@ -81,6 +83,11 @@
     &:focus {
       background-color: var(--hover-color);
       color: var(--primary-font-color);
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: calc(17 / 14);
     }
   }
 
@@ -97,8 +104,10 @@
     align-self: center;
     max-width: 220px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       max-width: 320px;
+      font-size: 20px;
+      line-height: calc(28 / 20);
     }
   }
 }
@@ -117,7 +126,7 @@
     width: 100%;
     max-width: 220px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       max-width: 370px;
     }
   }
@@ -160,10 +169,14 @@
   display: flex;
   align-items: center;
 
+  @media screen and (min-width: 768px) {
+    padding: 32px 54px;
+  }
+
   &__title {
     margin-bottom: 84px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 100px;
     }
   }
@@ -176,7 +189,7 @@
     margin-bottom: 24px;
     width: 100%;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       flex-direction: row;
       gap: 32px;
       margin-bottom: 40px;
@@ -184,7 +197,7 @@
   }
 
   &__item {
-    height: 135px;
+    height: 136px;
     max-width: 132px;
     width: 100%;
     border: 2px solid;
@@ -196,6 +209,7 @@
 
     &--ice-cream {
       border-color: var(--ice-cream-card-color);
+      transition: background-color var(--transition-style);
 
       &:hover,
       &:focus,
@@ -207,6 +221,7 @@
 
     &--ice-coffee {
       border-color: var(--ice-coffee-card-color);
+      transition: background-color var(--transition-style);
 
       &:hover,
       &:focus,
@@ -218,6 +233,7 @@
 
     &--milkshakes {
       border-color: var(--milkshakes-color);
+      transition: background-color var(--transition-style);
 
       &:hover,
       &:focus,
@@ -261,7 +277,7 @@
           }
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 768px) {
           background-image: url('/src/images/modal/modal-icecream-desk.png');
 
           @media (min-device-pixel-ratio: 2),
@@ -299,7 +315,7 @@
           }
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 768px) {
           background-image: url('/src/images/modal/modal-icecoffee-desk.png');
 
           @media (min-device-pixel-ratio: 2),
@@ -337,7 +353,7 @@
           }
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 768px) {
           background-image: url('/src/images/modal/modal-milkshake-desk.png');
 
           @media (min-device-pixel-ratio: 2),
@@ -367,13 +383,11 @@
 // =====MODAL PRODUCTS INGRIDIENTS=====
 
 .ingridients-modal {
-  max-width: 280px;
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding: 28px 20px 32px 20px;
 
-  @media screen and (min-width: 1200px) {
-    max-width: 568px;
+  @media screen and (min-width: 768px) {
     padding: 32px 40px;
   }
 
@@ -408,7 +422,7 @@
     gap: 9px;
     margin-bottom: 39px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       gap: 20px;
       margin-bottom: 48px;
     }
@@ -423,11 +437,21 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 10px;
-    line-height: 28px;
+    line-height: 12px;
     color: var(--secondary-font-color);
+    padding: 0 8px;
+    padding-bottom: 8px;
+    text-overflow: ellipsis;
+
+    @media screen and (min-width: 768px) {
+      width: 65px;
+      height: 90px;
+      padding-bottom: 14px;
+    }
   }
+
 
   &__circle {
     display: flex;
@@ -440,10 +464,16 @@
     left: 3px;
     border-radius: 50%;
     background-color: var(--nutrition-facts-ellipse);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 28px;
     color: var(--secondary-font-color);
+
+    @media screen and (min-width: 768px) {
+      width: 53px;
+      height: 53px;
+      left: 4px;
+    }
   }
 
   &__subtitle {
@@ -462,7 +492,7 @@
     margin-bottom: 48px;
     gap: 11px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       max-width: 488px;
     }
   }
@@ -483,20 +513,18 @@
 // =====MODAL ABOUT READ MORE=====
 
 .readmore-modal {
-  max-width: 280px;
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding: 28px;
 
-  @media screen and (min-width: 1200px) {
-    max-width: 568px;
+  @media screen and (min-width: 768px) {
     padding: 32px 60px;
   }
 
   &__title {
     margin-bottom: 20px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 32px;
     }
   }
@@ -513,7 +541,7 @@
     margin-bottom: 20px;
     background-color: var(--secondary-font-color);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       width: 448px;
       height: 205px;
       margin-bottom: 32px;
@@ -524,21 +552,17 @@
 // =====MODAL CONTACTS LOCATION=====
 
 .location-modal {
-  max-width: 280px;
   display: flex;
   align-items: center;
 
-  padding: 30px;
-
-  @media screen and (min-width: 1200px) {
-    max-width: 568px;
+  @media screen and (min-width: 768px) {
     padding: 32px 60px;
   }
 
   &__title {
     margin-bottom: 20px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 32px;
     }
   }
@@ -553,7 +577,7 @@
     width: 220px;
     height: 200px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       width: 448px;
       height: 260px;
       margin-bottom: 32px;
@@ -564,6 +588,10 @@
 // =====MODAL CONTACTS FRANCHISE=====
 
 .franchise-modal {
+  @media screen and (min-width: 768px) {
+    padding: 32px 60px;
+  }
+
   &__title {
     margin-bottom: 20px;
   }
@@ -572,5 +600,9 @@
     line-height: 1.4;
     color: var(--secondary-font-color);
     margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
   }
 }
