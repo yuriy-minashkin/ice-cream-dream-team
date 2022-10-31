@@ -102,6 +102,10 @@
 		right 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer__link:focus-visible {
+	outline: transparent;
+}
+
 .footer__link--git {
 	position: absolute;
 	right: 119px;
