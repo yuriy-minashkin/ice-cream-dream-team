@@ -1,10 +1,10 @@
 .section-reviews {
   width: 100%;
-
   text-align: center;
   padding-bottom: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
   @media screen and (min-width: 768px) {
-    // height: 958px;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 360px;
@@ -12,81 +12,82 @@
   @media screen and (min-width: 1200px) {
     padding-bottom: 200px;
   }
-}
-
-.section-reviews__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.section-reviews__wrap {
-  width: 100%;
-  // padding: 0 20px 50px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 48px;
-
-  @media screen and (min-width: 320px) {
-    width: 280px;
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 705px;
+  &__wrap {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 48px;
+
+    @media screen and (min-width: 480px) {
+      width: 280px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 705px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 968px;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 968px;
+  &__text {
+    margin-bottom: 30px;
+    display: block;
+    padding: 34px 39px;
+    margin: 0 0 30px;
+    background: var(--primary-background-color);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.58;
+
+    text-align: center;
+
+    color: #fcfcfc;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.86;
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      margin-bottom: 36px;
+    }
   }
-}
-.section-reviews__text {
-  margin-bottom: 30px;
-  display: block;
-  padding: 34px 39px;
-  margin: 0 0 30px;
-  background: var(--primary-background-color);
-  border-radius: 10px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2.58;
 
-  text-align: center;
-
-  color: #fcfcfc;
-  @media screen and (min-width: 768px) {
+  &__name {
+    display: block;
+    margin: 0 0 32px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.86;
-    margin-bottom: 32px;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 16px;
-    margin-bottom: 36px;
-  }
-}
-.section-reviews__name {
-  display: block;
-  margin: 0 0 32px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.85;
+    font-size: 20px;
+    line-height: 1.85;
 
-  text-align: center;
-  margin-bottom: 14px;
-  color: #131313;
-  @media screen and (min-width: 768px) {
+    text-align: center;
+    margin-bottom: 14px;
+    color: #131313;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+      font-size: 16px;
+    }
+  }
+
+  &__img {
+    margin-top: 80px;
     margin-bottom: 32px;
-    font-size: 16px;
-  }
-}
-.section-reviews__img {
-  margin-top: 80px;
-  margin-bottom: 32px;
-  @media screen and (min-width: 768px) {
-    margin-top: 60px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-top: 128px;
+    @media screen and (min-width: 768px) {
+      margin-top: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 128px;
+    }
   }
 }
 .swiper-pagination {
@@ -96,14 +97,21 @@
 }
 .swiper-horizontal > .swiper-pagination-bullets {
   margin-bottom: 20px;
-  
 }
 .swiper-pagination-bullet {
-  width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px));
-  height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,12px));
-  background: #D9D9D9;
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 12px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 12px)
+  );
+  background: #d9d9d9;
   opacity: unset;
 }
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 var(--swiper-pagination-bullet-horizontal-gap,9px);
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9px);
 }
