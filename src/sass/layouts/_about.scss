@@ -123,10 +123,12 @@
   // }
 
   &__descrition {
-    max-width: 220px;;
+    max-width: 100%;
+    padding: 0 30px;
     margin-bottom: 20px;
     @media screen and (min-width: 768px) {
       max-width: 334px;
+      padding: 0;
       margin-bottom: 48px;
     }
     @media screen and (min-width: 1200px) {
