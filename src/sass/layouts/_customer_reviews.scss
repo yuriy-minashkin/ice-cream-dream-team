@@ -7,10 +7,10 @@
   @media screen and (min-width: 768px) {
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 360px;
+    padding-bottom: 370px;
   }
   @media screen and (min-width: 1200px) {
-    padding-bottom: 200px;
+    padding-bottom: 170px;
   }
   &__list {
     list-style: none;
@@ -82,6 +82,7 @@
   &__img {
     margin-top: 80px;
     margin-bottom: 32px;
+    border-radius: 50%;
     @media screen and (min-width: 768px) {
       margin-top: 60px;
     }
