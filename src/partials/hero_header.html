@@ -43,15 +43,47 @@
     </nav>
 
     <div class="button-wrapper">
-      <button class="menu-btn" type="button">
+      <button
+        class="menu-btn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        mobile-menu-button
+      >
         <svg width="36" height="36">
           <use
-            class="menu-icon"
+            class="menu-icon-open"
             href="./images/header-hero/svg/icons.svg#burger"
           ></use>
         </svg>
       </button>
       <button class="buy-now-btn" type="button" data-header-modal-open>
+        Buy now
+        <svg class="buy-arrow" width="18px" height="18px">
+          <use href="./images/header-hero/svg/icons.svg#chevron-right"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" mobile-menu>
+      <nav class="mob-nav">
+        <ul class="mob-nav__list">
+          <li class="mob-nav__item">
+            <a class="mob-nav__link" href="">Home</a>
+          </li>
+          <li class="mob-nav__item">
+            <a class="mob-nav__link" href="">How it's made?</a>
+          </li>
+          <li class="mob-nav__item">
+            <a class="mob-nav__link" href="">Our products</a>
+          </li>
+          <li class="mob-nav__item">
+            <a class="mob-nav__link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="mobile-buy" type="button" data-header-modal-open>
         Buy now
         <svg class="buy-arrow" width="18px" height="18px">
           <use href="./images/header-hero/svg/icons.svg#chevron-right"></use>
