@@ -443,7 +443,6 @@
     color: var(--secondary-font-color);
     padding: 0 8px;
     padding-bottom: 8px;
-    text-overflow: ellipsis;
 
     @media screen and (min-width: 768px) {
       width: 65px;
@@ -452,6 +451,15 @@
     }
   }
 
+  &__text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 38px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 52px;
+    }
+  }
 
   &__circle {
     display: flex;
