@@ -1,0 +1,5 @@
+import "./js/header-modal"
+import "./js/about-modal"
+import "./js/products-modal"
+import "./js/location-modal"
+import "./js/franchise-modal"
