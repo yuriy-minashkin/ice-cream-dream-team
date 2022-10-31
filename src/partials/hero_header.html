@@ -1,6 +1,6 @@
 <header class="header">
   <div class="header__container container">
-    <a class="logo" href="#">
+    <a class="header__logo" href="">
       <picture>
         <source
           srcset="
@@ -35,10 +35,14 @@
       <ul class="nav__list">
         <li class="nav__item"><a class="nav__link" href="">Home</a></li>
         <li class="nav__item">
-          <a class="nav__link" href="">How it's made?</a>
+          <a class="nav__link" href="#about">How it's made?</a>
         </li>
-        <li class="nav__item"><a class="nav__link" href="">Our products</a></li>
-        <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="#products">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contacts">Contact</a>
+        </li>
       </ul>
     </nav>
 
@@ -55,30 +59,57 @@
             class="menu-icon-open"
             href="./images/header-hero/svg/icons.svg#burger"
           ></use>
+          <use
+            class="menu-icon-close"
+            href="./images/header-hero/svg/icons.svg#mob-close"
+          ></use>
         </svg>
       </button>
       <button class="buy-now-btn" type="button" data-header-modal-open>
         Buy now
-        <svg class="buy-arrow" width="18px" height="18px">
+        <svg class="buy-now-btn--arrow" width="18px" height="18px">
           <use href="./images/header-hero/svg/icons.svg#chevron-right"></use>
         </svg>
       </button>
     </div>
 
     <div class="mobile-menu" id="mobile-menu" mobile-menu>
+      <a class="mob-logo" href="">
+        <picture>
+          <source
+            srcset="
+              ./images/header-hero/tab/logo-tab-x1.png 1x,
+              ./images/header-hero/tab/logo-tab-x2.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/header-hero/mobile/logo-mob-x1.png 1x,
+              ./images/header-hero/mobile/logo-mob-x2.png 2x
+            "
+            media="(max-width: 768px)"
+            type="image/png"
+          />
+
+          <img src="./images/header-hero/tab/logo-tab-x1.png" alt="logo" />
+        </picture>
+      </a>
+
       <nav class="mob-nav">
         <ul class="mob-nav__list">
           <li class="mob-nav__item">
             <a class="mob-nav__link" href="">Home</a>
           </li>
           <li class="mob-nav__item">
-            <a class="mob-nav__link" href="">How it's made?</a>
+            <a class="mob-nav__link" href="#about">How it's made?</a>
           </li>
           <li class="mob-nav__item">
-            <a class="mob-nav__link" href="">Our products</a>
+            <a class="mob-nav__link" href="#products">Our products</a>
           </li>
           <li class="mob-nav__item">
-            <a class="mob-nav__link" href="">Contact</a>
+            <a class="mob-nav__link" href="#contacts">Contact</a>
           </li>
         </ul>
       </nav>
