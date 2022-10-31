@@ -40,9 +40,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    @media screen and(min-width: 480px) {
-      width: 280px;
-    }
+   
     @media screen and(min-width: 768px) {
       width: 224px;
       padding: 40px 24px;

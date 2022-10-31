@@ -24,7 +24,7 @@
     padding-bottom: 48px;
 
     @media screen and (min-width: 480px) {
-      width: 280px;
+      width: 440px;
     }
 
     @media screen and (min-width: 768px) {
@@ -37,6 +37,7 @@
   }
 
   &__text {
+    min-height: 256px;
     margin-bottom: 30px;
     display: block;
     padding: 34px 39px;
@@ -52,6 +53,7 @@
     color: #fcfcfc;
 
     @media screen and (min-width: 768px) {
+      min-height: 138px;
       font-weight: 500;
       font-size: 14px;
       line-height: 1.86;
