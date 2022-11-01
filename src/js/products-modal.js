@@ -9,6 +9,7 @@
     ),
     productsModal: document.querySelector('[data-products-modal]'),
   };
+
   for (item of refs.openProductsModalBtn) {
     item.addEventListener('click', toggleProductsModal);
   };
@@ -17,5 +18,5 @@
 
   function toggleProductsModal() {
     refs.productsModal.classList.toggle('is-hidden');
-  }
+  };
 })();
