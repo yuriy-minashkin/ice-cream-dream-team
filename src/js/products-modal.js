@@ -11,7 +11,7 @@
   };
   for (item of refs.openProductsModalBtn) {
     item.addEventListener('click', toggleProductsModal);
-  }
+  };
 
   refs.closeProductsModalBtn.addEventListener('click', toggleProductsModal);
 
