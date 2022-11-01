@@ -138,8 +138,15 @@
     height: 32px;
     padding: 8px 12px;
     outline: 0;
+    transition: border-color var(--transition-style);
+
     &::placeholder {
       color: var(--second-font-color);
+    }
+
+    &:hover,
+    &:focus {
+      border-color: var(--hover-color);
     }
   }
 
@@ -157,8 +164,17 @@
     border-radius: 10px;
     padding: 8px 12px;
     outline: 0;
+    resize: none;
+
+    transition: border-color var(--transition-style);
+
     &::placeholder {
       color: var(--second-font-color);
+    }
+
+    &:hover,
+    &:focus {
+      border-color: var(--hover-color);
     }
   }
 }
@@ -420,12 +436,12 @@
       border-radius: 50%;
 
       @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          & {
-            background-image: url('/src/images/modal/modal-choco-retina.jpg');
-          }
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+          background-image: url('/src/images/modal/modal-choco-retina.jpg');
         }
+      }
     }
   }
   &__infolist {
