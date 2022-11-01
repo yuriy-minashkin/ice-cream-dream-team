@@ -1,8 +1,8 @@
 // BURGER MENU
 
 (() => {
-    const menuBtnRef = document.querySelector("[mobile-menu-button]");
-    const mobileMenuRef = document.querySelector("[mobile-menu]");
+    const menuBtnRef = document.querySelector("[data-mobile-menu-button]");
+    const mobileMenuRef = document.querySelector("[data-mobile-menu]");
     const mobileLink = document.querySelectorAll(".mob-nav__link");
     menuBtnRef.addEventListener("click", () => {
         const expanded =
