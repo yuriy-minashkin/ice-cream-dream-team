@@ -371,25 +371,31 @@
     }
 }
 
-.hero__bottom-discription {
+.hero__bottom-wrap {
     display: none;
     @media screen and(min-width: 768px) {
         display: block;
         width: 151px;
-        height: 105px;
-        font-size: 12px;
-        line-height: 1.4;
         margin-top: 56px;
         margin-left: 185px;
     }
     @media screen and(min-width: 1200px) {
-        width: 200px;
-        height: 112px;
+        width: 213px;
         margin-top: 109px;
-        margin-left: 239px;  
-        font-size: 14px;
-        line-height: 1.4;
+        margin-left: 239px;
     }
+}
+
+.hero__bottom-text {    
+        @media screen and(min-width: 768px) {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+    
+        @media screen and(min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.4;
+        }
 }
 
 
