@@ -586,6 +586,7 @@
         font-size: 32px;
         line-height: 1.218;
         color: #FCFCFC;
+        transition: color var(--transition-style);
 
         @media screen and(min-width: 768px) {
             font-weight: 700;
