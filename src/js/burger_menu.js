@@ -11,8 +11,12 @@
         menuBtnRef.setAttribute("aria-expanded", !expanded);
         mobileMenuRef.classList.toggle("is-open");
     });
-    mobileLink.addEventListener("click", () => {        
-        mobileMenuRef.classList.remove("is-open"); 
-        menuBtnRef.classList.remove("is-open");
-    });
+
+    
+    for (var i = 0; i < mobileLink.length; ++i) {
+        mobileLink[i].addEventListener('click', function (e) {
+            mobileMenuRef.classList.remove("is-open");
+            menuBtnRef.classList.remove("is-open");
+        });
+    };
 })();
