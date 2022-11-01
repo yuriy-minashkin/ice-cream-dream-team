@@ -1,4 +1,15 @@
 .footer {
+	padding-bottom: 62px;
+	
+	@media screen and (min-width: 768px) {
+	padding-bottom: 13px;
+	}
+	
+	@media screen and (min-width: 1200px) {
+	padding-bottom: 11px;
+	}
+
+
 	&__inner {
 		margin-bottom: 40px;
 
@@ -212,8 +223,7 @@
 		font-size: 14px;
 		line-height: 152%;
 		color: var(--footer-end-text-color);
-		padding-top: 16px;
-		padding-bottom: 62px;
+		margin-top: 16px;
 		padding-left: 60px;
 		padding-right: 60px;
 		text-align: center;
@@ -222,8 +232,7 @@
 		@media screen and (min-width: 768px) {
 			line-height: 186%;
 			width: 100%;
-			padding-top: 14px;
-			padding-bottom: 13px;
+			margin-top: 14px;
 			padding-left: 0;
 			padding-right: 0;
 		}
@@ -232,8 +241,7 @@
 			font-size: 12px;
 			line-height: 186%;
 			width: 100%;
-			padding-top: 12px;
-			padding-bottom: 11px;
+			margin-top: 12px;
 			padding-left: 0;
 			padding-right: 0;
 		}

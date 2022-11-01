@@ -3,19 +3,13 @@
 }
 
 .contacts {
-  &.container {
-    padding-bottom: 38px;
-
-    @media screen and(min-width: 768px) {
-      padding-bottom: 40px;
-    }
-    @media screen and(min-width: 1200px) {
-      padding-bottom: 120px;
-    }
-  }
   background-color: var(--primary-background-color);
   align-items: center;
-  padding-bottom: 120px;
+  padding-bottom: 40px;
+  @media screen and(min-width: 1200px) {
+    padding-bottom: 120px;
+  }
+  
 
   &__list {
     font-style: normal;
