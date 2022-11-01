@@ -264,30 +264,31 @@
         height: 100%;
         top: -8;
         left: 0;
-        background-image: url('/src/images/modal/modal-icecream-mob.png');
+        background-image: url('/src/images/modal/modal-icecream.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 132px 132px;
+        background-size: 102% 102%;
+        border-radius: 50%;
 
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           & {
-            background-image: url('/src/images/modal/modal-icecream-mob-retina.png');
+            background-image: url('/src/images/modal/modal-icecream-retina.jpg');
           }
         }
 
-        @media screen and (min-width: 768px) {
-          background-image: url('/src/images/modal/modal-icecream-desk.png');
+        // @media screen and (min-width: 768px) {
+        //   background-image: url('/src/images/modal/modal-icecream-desk.png');
 
-          @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            & {
-              background-image: url('/src/images/modal/modal-icecream-desk-retina.png');
-            }
-          }
-        }
+        //   @media (min-device-pixel-ratio: 2),
+        //     (min-resolution: 192dpi),
+        //     (min-resolution: 2dppx) {
+        //     & {
+        //       background-image: url('/src/images/modal/modal-icecream-desk-retina.png');
+        //     }
+        //   }
+        // }
       }
     }
 
@@ -302,30 +303,31 @@
         height: 100%;
         top: -8;
         left: 0;
-        background-image: url('/src/images/modal/modal-icecoffee-mob.png');
+        background-image: url('/src/images/modal/modal-icecoffee.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 132px 132px;
+        background-size: 102% 102%;
+        border-radius: 50%;
 
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           & {
-            background-image: url('/src/images/modal/modal-icecoffee-mob-retina.png');
+            background-image: url('/src/images/modal/modal-icecoffee-retina.jpg');
           }
         }
 
-        @media screen and (min-width: 768px) {
-          background-image: url('/src/images/modal/modal-icecoffee-desk.png');
+        // @media screen and (min-width: 768px) {
+        //   background-image: url('/src/images/modal/modal-icecoffee-desk.png');
 
-          @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            & {
-              background-image: url('/src/images/modal/modal-icecoffee-desk-retina.png');
-            }
-          }
-        }
+        //   @media (min-device-pixel-ratio: 2),
+        //     (min-resolution: 192dpi),
+        //     (min-resolution: 2dppx) {
+        //     & {
+        //       background-image: url('/src/images/modal/modal-icecoffee-desk-retina.png');
+        //     }
+        //   }
+        // }
       }
     }
 
@@ -340,30 +342,31 @@
         height: 100%;
         top: -8;
         left: 0;
-        background-image: url('/src/images/modal/modal-milkshake-mob.png');
+        background-image: url('/src/images/modal/modal-milkshake.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 132px 132px;
+        background-size: 102% 102%;
+        border-radius: 50%;
 
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           & {
-            background-image: url('/src/images/modal/modal-milkshake-mob-retina.png');
+            background-image: url('/src/images/modal/modal-milkshake-retina.jpg');
           }
         }
 
-        @media screen and (min-width: 768px) {
-          background-image: url('/src/images/modal/modal-milkshake-desk.png');
+        // @media screen and (min-width: 768px) {
+        //   background-image: url('/src/images/modal/modal-milkshake-desk.png');
 
-          @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            & {
-              background-image: url('/src/images/modal/modal-milkshake-desk-retina.png');
-            }
-          }
-        }
+        //   @media (min-device-pixel-ratio: 2),
+        //     (min-resolution: 192dpi),
+        //     (min-resolution: 2dppx) {
+        //     & {
+        //       background-image: url('/src/images/modal/modal-milkshake-desk-retina.png');
+        //     }
+        //   }
+        // }
       }
     }
   }
@@ -410,10 +413,19 @@
       width: 100%;
       height: 100%;
       top: -8;
-      background-image: url(/src/images/modal/modal-icecoffee-mob-retina.png);
+      background-image: url('/src/images/modal/modal-choco.jpg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: 132px 132px;
+      border-radius: 50%;
+
+      @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          & {
+            background-image: url('/src/images/modal/modal-choco-retina.jpg');
+          }
+        }
     }
   }
   &__infolist {
