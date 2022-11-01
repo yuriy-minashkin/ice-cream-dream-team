@@ -183,6 +183,7 @@
 		font-size: 12px;
 		line-height: 186%;
 		color: var(--primary-font-color);
+		transition: color var(--transition-style);
 
 		@media screen and (min-width: 768px) {
 			font-size: 14px;
@@ -191,6 +192,12 @@
 		@media screen and (min-width: 1200px) {
 			font-size: 16px;
 			letter-spacing: 0.02em;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: #F8D24E;
 		}
 	}
 

@@ -4,22 +4,22 @@
     <div class="ingridients-modal__picture"></div>
 
     <ul class="ingridients-modal__infolist">
-      <div class="ingridients-modal__point">
+      <li class="ingridients-modal__point">
         <span class="ingridients-modal__text">kcal</span>
-        <div class="ingridients-modal__circle">320</div>
-      </div>
-      <div class="ingridients-modal__point">
+        <span class="ingridients-modal__circle">320</span>
+      </li>
+      <li class="ingridients-modal__point">
         <span class="ingridients-modal__text">Proteins</span>
-        <div class="ingridients-modal__circle">4g</div>
-      </div>
-      <div class="ingridients-modal__point">
+        <span class="ingridients-modal__circle">4g</span>
+      </li>
+      <li class="ingridients-modal__point">
         <span class="ingridients-modal__text">Fats</span>
-        <div class="ingridients-modal__circle">8,2g</div>
-      </div>
-      <div class="ingridients-modal__point">
+        <span class="ingridients-modal__circle">8,2g</span>
+      </li>
+      <li class="ingridients-modal__point">
         <span class="ingridients-modal__text">Carbs</span>
-        <div class="ingridients-modal__circle">40,4g</div>
-      </div>
+        <span class="ingridients-modal__circle">40,4g</span>
+      </li>
     </ul>
     <p class="ingridients-modal__subtitle">Ingridients</p>
     <ul class="ingridients-modal__list">
@@ -75,12 +75,18 @@
         ></textarea>
       </label>
     </form>
-    <button class="ingridients-modal__button button modal__button" type="submit">
+    <button
+      class="ingridients-modal__button button modal__button"
+      type="submit"
+    >
       Submit
     </button>
     <button class="modal__close-button" type="button" data-products-modal-close>
       <svg width="16" height="16">
-        <use class="modal__close-icon" href="/src/images/icons.svg#icon-close"></use>
+        <use
+          class="modal__close-icon"
+          href="/src/images/icons.svg#icon-close"
+        ></use>
       </svg>
     </button>
   </div>
