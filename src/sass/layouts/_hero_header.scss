@@ -450,9 +450,9 @@
     // width: 50px;
     // height: 40px;    
     border-radius: 3px;
-    margin-top: 20px;
+    padding: 20px 0;
     @media screen and(min-width: 1200px) {
-        margin-top: 32px;
+        padding: 32px 0;
     }
         &:focus-visible {
             outline: transparent;
