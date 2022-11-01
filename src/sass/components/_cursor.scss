@@ -1,8 +1,10 @@
 body {
-  cursor: url('../images/svg-icons/cursor.svg'), auto;
+  cursor: url('../images/svg-icons/cursor.svg'),
+  url('../images/svg-icons/cursor.png'), auto;
 }
 
 a,
 button {
-  cursor: url('../images/svg-icons/cursor-hover.svg'), pointer;
+  cursor: url('../images/svg-icons/cursor-hover.svg'), 
+  url('../images/svg-icons/cursor-hover.png'), pointer;
 }
