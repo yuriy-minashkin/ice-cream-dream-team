@@ -29,16 +29,6 @@
         }
     }
 }
-// .header
-//     @media screen and(min-width: 768px) {
-//         // padding-left: 32px;
-//         // padding-right: 32px;
-//         }
-//     @media screen and(min-width: 1200px) {
-//         padding-left: 16px;
-//         padding-right: 16px;        
-//     }   
-// }
 
 .nav {    
     display: none;
@@ -84,25 +74,26 @@
     border: none;
     padding: 0;
     margin-left: auto;
+    // &:hover .menu-icon-open {
+    //     fill: #131313;
+    // }    
+    // &:focus .menu-icon-open {
+    //     fill: #131313;
+    // }
+    
+    // &:hover .menu-icon-close {
+    //     fill: #131313;
+    // }
+    
+    // &:focus .menu-icon-close {
+    //     fill: #131313;
+    // }
 
     &.is-open {
     position: fixed;
     top: 16;
     right: 20;
-    z-index: 5;
-
-    &:hover .menu-icon-open {
-        fill: #131313;
-    }
-    &:focus .menu-icon-open {
-        fill: #131313;
-    }
-    &:hover .menu-icon-close {
-        fill: #131313;
-    }
-    &:focus .menu-icon-close {
-        fill: #131313;
-    }
+    z-index: 5;    
 
     @media screen and(min-width: 768px) {
         top: 32;
@@ -177,7 +168,8 @@
 
 
 .hero {
-&__container {
+    
+&__container {    
     height: 392px;
     position: relative;
 
@@ -286,43 +278,71 @@
     }
 
 }
-
-
-}
-
-
-
-
-.hero__btn-how {    
+&__btn-how {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: underline;    
-    height: 24px;    
-    padding: 7px 10px;    
+    text-decoration: underline;
+    height: 24px;
+    padding: 7px 10px;
     font-weight: 600;
     font-size: 8px;
     line-height: 1.25;
-    text-align: center;    
+    text-align: center;
     color: var(--accent-color);
     transition: color var(--transition-style);
+
     @media screen and(min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.214; 
-    padding: 12px 22px;
-    height: 42px;
+        font-size: 14px;
+        line-height: 1.214;
+        padding: 12px 22px;
+        height: 42px;
     }
+
     &:hover {
         color: #0A8817;
     }
+
     &:focus {
         color: #FCFCFC;
         outline: transparent;
     }
+
     &:disabled {
         color: #ABABAB;
     }
 }
+&__bottom-wrap {
+    display: none;
+
+    @media screen and(min-width: 768px) {
+        display: block;
+        width: 151px;
+        margin-top: 56px;
+        margin-left: 185px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        width: 213px;
+        margin-top: 109px;
+        margin-left: 239px;
+    }
+}
+&__bottom-text {
+    @media screen and(min-width: 768px) {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    @media screen and(min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+}
+
+
+
 
 .stores {
     display: none;
@@ -372,36 +392,7 @@
     }
 }
 
-.hero__bottom-wrap {
-    display: none;
-    @media screen and(min-width: 768px) {
-        display: block;
-        width: 151px;
-        margin-top: 56px;
-        margin-left: 185px;
-    }
-    @media screen and(min-width: 1200px) {
-        width: 213px;
-        margin-top: 109px;
-        margin-left: 239px;
-    }
-}
-
-.hero__bottom-text {    
-        @media screen and(min-width: 768px) {
-            font-size: 12px;
-            line-height: 1.4;
-        }
-    
-        @media screen and(min-width: 1200px) {
-            font-size: 14px;
-            line-height: 1.4;
-        }
-}
-
-
-
-.hero__ice-cream {    
+.ice-cream {    
     position: absolute;    
     bottom: -62;
     right: 15;  
@@ -410,14 +401,60 @@
     @media screen and(min-width: 768px) {
         bottom: -64;
         right: 7;
+        animation-name: wobble;
+            animation-duration: 1.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+            transform-origin: 50% 100%;
     }
     @media screen and(min-width: 1200px) {
         bottom: -108;
         right: 0;
-    }
+        
+    }    
 }
 
-.hero__dots {
+@keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-12%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-12%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-8%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-8%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(6%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(6%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+.over {
+    overflow: hidden;
+}
+
+.dots {
     position: absolute;
     bottom: -8px;
     right: 0px; 
@@ -432,30 +469,46 @@
     }
 }
 
-.hero__creamy {
+.creamy {
     display: none;
     position: absolute;
     z-index: 2;
     pointer-events: none;
     @media screen and(min-width: 768px) {
         display: block;
-        left: 16px;
+        left: 32px;
         bottom: 6px;
+        animation-name: spin;
+            animation-delay: 200ms;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
 
     }
     @media screen and(min-width: 1200px) { 
         display: block;       
         bottom: 57px;
         left: 17px;
+                
+        
+        
     }
     
 }
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .products__button {
     display: flex;
-    align-items: center;
-    // width: 50px;
-    // height: 40px;    
+    align-items: center;        
     border-radius: 3px;
     padding: 20px 0;
     @media screen and(min-width: 1200px) {
@@ -539,13 +592,13 @@
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
-    // z-index: 0;        
+    right: 0;            
     transform: translateX(100%);
     transition: transform 300ms ease-in-out;
     opacity: 0;
     &.is-open {
     transform: translateX(0);
+    
     opacity: 1;
     z-index: 4;
     }
